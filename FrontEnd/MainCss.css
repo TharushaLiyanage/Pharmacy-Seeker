@@ -53,6 +53,20 @@ body{
     padding: 20px 45px 20px 20px;
     font-size: 120%;
 }
+.wrapper .icon_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:white;
+    font-size: 2em;
+    color: black;
+    justify-items: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
 .input-box input::placeholder{
     color:#fff ;
 }
