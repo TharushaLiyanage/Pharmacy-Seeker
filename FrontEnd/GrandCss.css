@@ -193,7 +193,82 @@ header{
 .searchbar{
     display: flex;
     align-items: center;
-    min-height: 700px;
-    background-color: var(--white);
     
+    min-height: 100%;
+    /* sdcn */
+    background-color: rgba(163, 6, 27, 0.705);
+    border-radius: 50px;
+
+}
+.dropdown{
+    position: relative;
+    width: 100%;
+    background-color: purple;
+    border: 1px solid rgb(240, 237, 237);
+    border-radius: 50px;
+    box-shadow: 20px;
+    cursor: pointer;
+}
+.dropdown_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 500;
+    color:white;
+    padding: 1rem 1.5rem;
+}
+.dropdown_list{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    max-height:0 ;
+    overflow: scroll;
+    background-color: rgb(70, 66, 66);
+    transition:max-height 0.5s;
+    
+
+}
+#list.show{
+    max-height: 300px;
+}
+.dropdown-list-item{
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 1rem 0 1rem 1.5rem;
+    cursor: pointer;
+    transition: margin-left 0.2s ease, color 0.2s ease;
+    color: aqua;
+}
+.dropdown-list-item:hover{
+    margin-left: .5rem;
+    color: black;
+
+}
+.search_box{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    width: 100%;
+    color: purple;
+}
+.search_box input{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: purple;
+    border: 0;
+    outline: 0;
+}
+.search_box ion-icon{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.search_box input::placeholder{
+    font-size: 1rem;
+    font-weight:500;
+    color: rgb(185, 18, 185);
+
 }
