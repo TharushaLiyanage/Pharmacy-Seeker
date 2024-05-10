@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="GrandCss.css">
-    <link rel="stylesheet" href="MainCss.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
    
     <title>Document</title>
 </head>
@@ -18,65 +18,41 @@
             <a href="#">News</a>
             <a href="#">Services</a>
             <a href="#">Contact Us</a>
-            <button class="btnloggin-popup">Login </button>
+            
         </nav>
     </header>
-
-
-    <div class="wrapper">
-        
-           
-            <span class="icon_close"><ion-icon name="close-outline"></ion-icon></span>
-            <div class="Form-box Login">
-            <h1>Login</h1>
-            <form action="#">
-                
-                <div class="input-box">
-                <input type="text" placeholder="User name" required>
-                <i class='bx bxs-user' ></i></div>
-
-                <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forget password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="register-link">
-                    <p>Don't have an account?<a href="#"> Register</a></p>
-                </div>
-            </form>
-        </div> 
-
-        <div class="Form-box Register">
-            <h1>Registration</h1>
-            <form action="#">
-                
-                <div class="input-box">
-                <input type="text" placeholder="User name" required>
-                <i class='bx bxs-user' ></i></div>
-
-                <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class='bx bxs-lock-alt' ></i>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forget password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="register-link">
-                    <p>Don't have an account?<a href="#"> Register</a></p>
-                </div>
-            </form>
-        </div> 
-         
+<div class="wrapper">
+    <div class="form-box_Login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>email</label>
+        </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>password</label>
+        </div>
+    <div class="remember-forgot">
+        <label><input type="checkbox">Remeber me</label>
+        <a href="#">Fogrot password </a>
+    </div>
+    <button type="submit" class="btn">Login </button>
+    <div class="login-register">
+        <p>Don't have a account? <a href="#" class="register-link">Register</a></p>
+    </div>
+        </form>
     </div>
     
+</div>
+
+
+        
     
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
