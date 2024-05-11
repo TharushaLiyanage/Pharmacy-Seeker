@@ -196,14 +196,14 @@ header{
     
     min-height: 100%;
     /* sdcn */
-    background-color: rgba(163, 6, 27, 0.705);
+    background-color: rgba(114, 110, 111, 0.705);
     border-radius: 50px;
 
 }
 .dropdown{
     position: relative;
     width: 100%;
-    background-color: purple;
+    background-color: rgb(43, 37, 43);
     border: 1px solid rgb(240, 237, 237);
     border-radius: 50px;
     box-shadow: 20px;
@@ -231,7 +231,7 @@ header{
 
 }
 #list.show{
-    max-height: 300px;
+    max-height: 280px;
 }
 .dropdown-list-item{
     font-size: .9rem;
@@ -239,11 +239,11 @@ header{
     padding: 1rem 0 1rem 1.5rem;
     cursor: pointer;
     transition: margin-left 0.2s ease, color 0.2s ease;
-    color: aqua;
+    color: rgb(0, 0, 0);
 }
 .dropdown-list-item:hover{
     margin-left: .5rem;
-    color: black;
+    color: rgb(252, 252, 252);
 
 }
 .search_box{
@@ -251,14 +251,14 @@ header{
     align-items: center;
     padding-right: 1rem;
     width: 100%;
-    color: purple;
+    color: rgb(17, 10, 17);
 }
 .search_box input{
     padding: 1rem;
     width: 100%;
     font-size: 1rem;
     font-weight: 500;
-    color: purple;
+    color: rgb(0, 0, 0);
     border: 0;
     outline: 0;
 }
@@ -269,6 +269,23 @@ header{
 .search_box input::placeholder{
     font-size: 1rem;
     font-weight:500;
-    color: rgb(185, 18, 185);
+    color: rgb(90, 87, 90);
 
+}
+::-webkit-scrollbar{
+    width: 10px;
+
+
+}
+::-webkit-scrollbar-track{
+    background: #4e535a;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background:#161a16;
+    border-radius: 30px;
+    
+}
+::-webkit-slider{
+    background: #fff;
 }

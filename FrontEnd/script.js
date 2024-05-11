@@ -4,8 +4,13 @@ let icon = document.getElementById("icon");
 let span = document.getElementById("span");
 
 dropdownBtn.onclick=function(){
-    list.classList.toggle('show')
+   if ( list.classList.contains('show')){
+    icon.style.rotate="0deg";
+
+   }else{
     icon.style.rotate="-180deg";
+}
+list.classList.toggle('show')
 };
 window.onclick = function(e){
     if(
