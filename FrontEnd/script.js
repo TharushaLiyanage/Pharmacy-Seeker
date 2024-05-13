@@ -2,8 +2,11 @@ let dropdownBtn = document.getElementById("drop-text");
 let list = document.getElementById("list");
 let icon = document.getElementById("icon");
 let span = document.getElementById("span");
+let  input= document.getElementById("search-input");
+let  dropdown_list_item = document.getElementById("dropdown_list_item");
 
 dropdownBtn.onclick=function(){
+    //rotate arrow icon
    if ( list.classList.contains('show')){
     icon.style.rotate="0deg";
 
@@ -12,6 +15,7 @@ dropdownBtn.onclick=function(){
 }
 list.classList.toggle('show')
 };
+//hide dropdown when click outside
 window.onclick = function(e){
     if(
         e.target.id !== "drop-text"&&
