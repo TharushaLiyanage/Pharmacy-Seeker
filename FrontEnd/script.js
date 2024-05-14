@@ -1,28 +1,33 @@
-let dropdownBtn = document.getElementById("drop-text");
-let list = document.getElementById("list");
-let icon = document.getElementById("icon");
+let dropdownBtnText = document.getElementById("drop-text");
 let span = document.getElementById("span");
-let  input= document.getElementById("search-input");
-let  dropdown_list_item = document.getElementById("dropdown_list_item");
+let icon = document.getElementById("icon");
+let list = document.getElementById("list");
+let input = document.getElementById("search-input");
+let listItems = document.querySelectorAll(".dropdown-list-item");
 
-dropdownBtn.onclick=function(){
-    //rotate arrow icon
-   if ( list.classList.contains('show')){
-    icon.style.rotate="0deg";
-
-   }else{
-    icon.style.rotate="-180deg";
-}
-list.classList.toggle('show')
+dropdownBtnText.onclick = function () {
+  list.classList.toggle("show");
+  icon.style.rotate = "-180deg";
 };
-//hide dropdown when click outside
-window.onclick = function(e){
-    if(
-        e.target.id !== "drop-text"&&
-        e.target.id !== "span"&&
-        e.target.id !== "icon"
-    ){
-        list.classList.remove('show')
-        icon.style.rotate="0deg";
+
+window.onclick = function (e) {
+  if (
+    e.target.id !== "drop-text" &&
+    e.target.id !== "icon" &&
+    e.target.id !== "span"
+  ) {
+    list.classList.remove("show");
+    icon.style.rotate = "0deg";
+  }
+};
+
+for (item of listItems) {
+  item.onclick = function (e) {
+    span.innerText = e.target.innerText;
+    if (e.target.innerText == "Everything") {
+      input.placeholder = "Search Anything...";
+    } else {
+      input.placeholder = "Search in " + e.target.innerText + "...";
     }
+  };
 }
