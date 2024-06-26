@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="GrandCss.css">
+    <link rel="stylesheet" href="C:\Users\Admin\OneDrive\Desktop\File Upload in JavaScript1\File Upload in JavaScript\styleForUpolader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     
     
    
@@ -78,7 +80,19 @@
     <!-- for page 2 section and for the upload file -->
     <section id="two">
         <div class="mmr" style="border: 1px solid;">
-          <h1>This is Sec 2</h1>
+          <!-- <h1>This is Sec 2</h1> -->
+          <div class="uploader">
+            <!-- <header>File Uploader JavaScript</header> -->
+            <form action="#">
+              <input class="file-input" type="file" name="file" hidden>
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Browse File to Upload</p>
+            </form>
+            <section class="progress-area"></section>
+            <section class="uploaded-area"></section>
+          </div>
+          <script src="ScriptForTheUploader.js"></script>
+          
         </div>
     </section>
     </div>
