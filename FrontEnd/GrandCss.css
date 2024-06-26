@@ -4,6 +4,9 @@
     box-sizing:border-box ;
     font-family: 'Poppins',sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     display: flex;
     min-height: 100vh;
@@ -12,6 +15,7 @@ body{
     background-position: center;
     align-items: center;
     justify-content: center;
+    
 }
 header{
     position: fixed;
@@ -194,6 +198,8 @@ header{
     display: flex;
     align-items: center;
     
+   
+    
     min-height: 100%;
     
     /* sdcn */
@@ -253,6 +259,7 @@ header{
     padding-right: 1rem;
     width: 100%;
     color: rgb(17, 10, 17);
+
 }
 .search_box input{
     padding: 1rem;
@@ -289,4 +296,84 @@ header{
 }
 ::-webkit-slider{
     background: #fff;
+}
+
+/* .full-page{
+    display: table-row;
+    
+    min-height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    margin-top: 0;
+
+}
+.file-upload{
+    display: table-row;
+    width: 100%;
+    margin-top: 10px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+} */
+#one{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+
+ #two{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .scroll-down{
+    border: 2px solid black;
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50PX;
+    cursor: pointer;
+    
+ }
+.scroll-down::before,
+.scroll-down::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2PX solid black;
+    height: 10px;
+    width: 10px;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down infinite 1s;
+}
+.scroll-down::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+
 }
