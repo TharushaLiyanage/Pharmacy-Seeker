@@ -42,7 +42,7 @@
                 <label>password</label>
         </div>
     
-    <button type="submit" class="btn">Next </button>
+    <button type="button" class="btn" id="nextButton">Next </button>
     <div class="login-register">
         <p>Already have a account? <a href="main_page.html" class="register-link">Login</a></p>
     </div>
@@ -50,6 +50,25 @@
     </div>
     
 </div>
+<script>
+    document.getElementById('nextButton').addEventListener('click', function() {
+        const inputs = document.querySelectorAll('input[type="text"]');
+        let allFilled = true;
+        
+        inputs.forEach((input) => {
+            if (!input.value.trim()) {
+                allFilled = false;
+            }
+        });
+
+        if (allFilled) {
+            // Redirect to the next page
+            window.location.href = 'login_register.html'; // Change 'nextpage.html' to the URL of your next page
+        } else {
+            alert('Please fill all the text areas.');
+        }
+    });
+</script>
 
 
 
