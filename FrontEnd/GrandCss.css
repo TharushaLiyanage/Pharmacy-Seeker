@@ -22,17 +22,48 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    /* padding: 20px 100px; */
+
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
-.logo{
+/* .logo{
     font-size: 2em;
     color: #fff;
     user-select: none;
+    border: 2px solid #fff;
+    /* image-rendering: url(Logoimg.png) no-repeat; */
+ */
+.logo-image{
+   
+    
+    padding-top:10px;
+    display: flex;
+    
+    
+   
+    
+    
+}
+.img-fluid{
+    width: 200px;
+    height: 80px;
+    position: relative;
+    padding-left: 5px;
+    margin-top: 5px;
+     
+}
+    
+
+
+.navigation{
+    padding: 20px 100px;
+}
+.navbar-brand{
+    border: 2px;
 }
 .navigation a{
     position: relative;

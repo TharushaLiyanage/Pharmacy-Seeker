@@ -17,17 +17,43 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    /* padding: 20px 100px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
 
-.logo {
+/* .logo {
     font-size: 2em;
     color: #fff;
     user-select: none;
+} */
+.logo-image{
+   
+    
+    
+    
+    padding-top:10px;
+    display: flex;
+    
+    
+   
+    
+    
+}
+.img-fluid{
+    width: 200px;
+    height: 80px;
+    position: relative;
+    padding-left: 10px;
+     
+}
+    
+
+
+.navigation{
+    padding: 20px 100px;
 }
 
 .navigation a {
@@ -104,7 +130,7 @@ header {
 
 .form-box h2 {
     font-size: 2em;
-    color: #000; /* Changed to black */
+    color:rgb(39, 37, 37) ;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -123,6 +149,7 @@ header {
     margin-top: 20px;
     display: block;
 }
+
 
 .input-box input,
 .input-box select,
