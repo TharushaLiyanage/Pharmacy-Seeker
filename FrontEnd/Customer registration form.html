@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GrandCss1.css">
+    <title>Register as Customer</title>
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <a href="First_page.php">
+              <img src="Logoimg.png" class="img-fluid">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="First_page.php">Home</a>
+            <a href="#">Pharmacies</a>
+            <a href="News Page.html">News</a>
+            <a href="services.html">Services</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="form-box">
+                <h2>Register as Customer</h2>
+                <form action="insert_customer.php" method="POST">
+                    <div class="input-box">
+                       <span class="icon"><ion-icon name="person"></ion-icon></span>
+                       <input type="text" required name="name">
+                       <label>Name</label>
+                    </div>
+                    <div class="input-box">
+                       <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                       <input type="email" required name="email">
+                       <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required name="password">
+                        <label>Password</label>
+                    </div>
+                    <div class="input-box">
+                        <label>Gender</label>
+                        <input type="radio" name="gender" value="Male" required> Male
+                        <input type="radio" name="gender" value="Female" required> Female
+                        <input type="radio" name="gender" value="Not Prefer To Say" required> Not Prefer To Say
+                    </div>
+                    <div class="input-box">
+                        <label>Birthday</label>
+                        <input type="date" required name="birthday">
+                    </div>
+                    <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="tel" required name="phone_number">
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
