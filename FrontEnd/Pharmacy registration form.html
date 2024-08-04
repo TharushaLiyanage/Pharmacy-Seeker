@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="GrandCss1.css">
+    
+    <title>Register as Pharmacy</title>
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <a href="First_page.php">
+			
+              <img src="Logoimg.png" class="img-fluid" alt="PharmaSonic Logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="First_page.php">Home</a>
+            <a href="#">Pharmacies</a>
+            <a href="News Page.html">News</a>
+            <a href="services.html">Services</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+		<div class="form-box">
+            <h2>Register as Pharmacy</h2>
+            <div class="form-content">
+                <form action="insert_pharmacy.php" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="name" required>
+                        <label>Pharmacy Name</label>
+                        <span class="icon"><ion-icon name="business"></ion-icon></span>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="phone_number" required>
+                        <label>Phone Number</label>
+                        <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="district" required>
+                        <label>District</label>
+                        <span class="icon"><ion-icon name="location"></ion-icon></span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="address" required>
+                        <label>Address</label>
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+	
+	
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
